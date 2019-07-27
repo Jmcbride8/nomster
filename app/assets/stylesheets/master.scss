@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+
 .booyah-box{
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
@@ -30,4 +31,10 @@ body {
   /* Modern Georgia-based serif stack */
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 
+}
+
+.navbar-inverse .navbar-brand{
+  color: #40CCBF !important;
+  font-family: 'alex_brushregular', cursive;
+  font-size: 26px;
 }
