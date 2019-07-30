@@ -38,3 +38,55 @@ body {
   font-family: 'alex_brushregular', normal;
   font-size: 26px;
 }
+
+.pagination {
+  background: transparent;
+  cursor: default;
+  /* self-clearing method: */ }
+  .pagination a, .pagination span, .pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .pagination .disabled {
+    color: #999999;
+    border: 1px solid #dddddd; 
+    border-radius: 5px;}
+  .pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #40CCBF;
+    color: white;
+    border: 1px solid #40CCBF; 
+    border-radius: 5px;}
+  .pagination a {
+    text-decoration: none;
+    color: #40CCBF;
+    border: 1px solid #40CCBF;
+    border-radius: 5px; }
+    .pagination a:hover, .pagination a:focus {
+      color: #40CCBF;
+      background: white;
+      border-color: #40CCBF;
+      border-radius: 5px;}
+  .pagination .page_info {
+    background: #2e6ab1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .pagination .page_info b {
+      color: #40CCBF;
+      background: #6aa6ed;
+      padding: 0.1em 0.25em; }
+  .pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .pagination {
+    height: 1%; }
+  *:first-child + html .pagination {
+    overflow: hidden; }
