@@ -74,3 +74,8 @@ gem 'will_paginate', '> 3.0'
 gem 'simple_form', '~> 4.1'
 gem "font-awesome-rails"
 gem 'devise'
+
+#Geocoding gem to access ability to convert address into lat,long, etc
+gem "geocoder"
+#gem to access an API key saved locally/on heroku
+gem "figaro"
