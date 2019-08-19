@@ -75,7 +75,7 @@
     </button>
   
 
-  <div class="clear"></div>
+    <div class="clear"></div>
     <div class="row">
       <% @place.comments.each do |comment| %>
         <div class="col-12 col-sm-6">
@@ -91,3 +91,31 @@
       <% end %>
     </div>
   </div>
+</div>
+
+<!-- need to complete this section - since I only added the element that goes into the modal. May need the whole modal section too. -->
+
+<div class="booyah-box col-10 offset-1">
+  <h1 class="float-left">Photos</h1>
+  <!-- Button trigger modal -->
+  
+  <div class="clear"></div>
+  
+  <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+    <%= f.input :caption %>
+    <%= f.input :picture %>
+    <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+  <% end %>
+
+  <% @place.photos.each do |photo| %>
+      <p><%= image_tag photo.picture.url, class: 'img.fluid' %></p> 
+      <p><%= photo.caption %></p>
+      <br/>
+  <% end %>
+
+
+</div>
+
+
+
+

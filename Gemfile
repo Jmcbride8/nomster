@@ -79,3 +79,9 @@ gem 'devise'
 gem "geocoder"
 #gem to access an API key saved locally/on heroku
 gem "figaro"
+
+#gem to allow upload and access of pictures and files
+gem 'carrierwave', '~> 1.0'
+
+#gem to access AWS S3 storage
+gem 'fog-aws'
