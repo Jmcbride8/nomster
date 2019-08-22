@@ -6,10 +6,17 @@
 
   <% @places.each do |place| %>
     <div class="booyah-box col-10 offset-1">
+      <% place.photos.each do |photo| %>
+        <% if photo.picture.url.present? %>
+            <p><%= image_tag photo.picture.url, :size => "150x150", class: 'img.fluid' %></p> 
+          <br/>
+        <% end %>
+      <% end %>
+
       <h1><%= link_to place.name, place_path(place) %></h1><br />
       <i><%= place.address %></i><br /><br />
       <p><%= place.description %></p><br />
-    
+      
       <% if place.user.present? %>  
         <small><%=place.user.email %></small>
       <% end %>
@@ -26,11 +33,6 @@
             </blockquote>
         </div>
       <% end %>
-
-
-
-
-
     </div>
 
   <% end %>

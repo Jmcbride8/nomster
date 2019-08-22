@@ -120,23 +120,23 @@
       </div>
     </div>
   </div>
-  <br/><br/>
+  
 
   <!-- end of modal -->
 
 
 <div class="booyah-box col-10 offset-1">
-  <h1 class="float-left">Photos</h1>
+  <h1 class="float">Photos</h1>
   
   <div class="clear"></div>
 
-
   <% @place.photos.each do |photo| %>
-      <p><%= image_tag photo.picture.url, class: 'img.fluid' %></p> 
-      <p><%= photo.caption %></p>
+    <% if photo.picture.url.present? %>
+        <p><%= image_tag photo.picture.url, :size => "150x150", class: 'img.fluid' %></p> 
+        <p><%= photo.caption %></p>
       <br/>
+    <% end %>
   <% end %>
-
 
 </div>
 
