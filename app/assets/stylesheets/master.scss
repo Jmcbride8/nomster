@@ -126,7 +126,10 @@ blockquote p {
   display: inline;
 }
 
-.photos_size{
-  height: 100px;
-  width: 100px;
+img{
+    vertical-align: middle;
+    max-height: 300px;
+    overflow: hidden;
+    width: 100%;
+    object-fit: cover;
 }
