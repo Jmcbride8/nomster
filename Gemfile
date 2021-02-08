@@ -81,7 +81,7 @@ gem "geocoder"
 gem "figaro"
 
 #gem to allow upload and access of pictures and files
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 #gem to access AWS S3 storage
 gem 'fog-aws'
